@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import ru.roman.errors.BadRequest;
 import ru.roman.errors.Forbidden;
+import ru.roman.errors.InternalError;
 
 public abstract class ApiBase {
     protected final Logger log = LoggerFactory.getLogger(this.getClass());

@@ -2,10 +2,10 @@
 <included>
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>bgood-dev.log</file>
+        <file>dev.log</file>
 
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <fileNamePattern>bgood-dev.%i.log.zip</fileNamePattern>
+            <fileNamePattern>dev.%i.log.zip</fileNamePattern>
             <minIndex>1</minIndex>
             <maxIndex>20</maxIndex>
         </rollingPolicy>
@@ -28,11 +28,12 @@
 
     <logger name="org.springframework" level="OFF"/>
     <logger name="org.apache" level="OFF"/>
+    <logger name="jndi" level="OFF"/>
     <logger name="org.hibernate" level="OFF"/>
 
     <logger name="org.hibernate.SQL" level="OFF"/>
 
-    <root level="error">
+    <root level="warn">
         <appender-ref ref="FILE"/>
         <appender-ref ref="STDOUT"/>
     </root>

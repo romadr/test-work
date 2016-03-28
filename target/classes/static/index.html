@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bootstrap 101 Template</title>
+    <title>Demo</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -15,9 +15,10 @@
 <body>
 
 <div class="container search-form">
+    <h1 class="text-center">Stackoverflow API demo</h1>
     <div class=" center-block">
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search for...">
+            <input id="search-string", type="text" class="form-control" placeholder="Search for...">
       <span class="input-group-btn">
         <button class="btn btn-default" type="button" id="search-button">Search!</button>
       </span>
@@ -25,31 +26,8 @@
     </div>
 
     <div>
-        <table class="table table-striped" id="result-table">
-            <thead>
-            <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>john@example.com</td>
-            </tr>
-            <tr>
-                <td>Mary</td>
-                <td>Moe</td>
-                <td>mary@example.com</td>
-            </tr>
-            <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
-            </tr>
-            </tbody>
+        <table class="table" id="result-table">
+
         </table>
 
     </div>
@@ -60,5 +38,6 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/search.js"></script>
+<script src="js/date.format.js"></script>
 </body>
 </html>
